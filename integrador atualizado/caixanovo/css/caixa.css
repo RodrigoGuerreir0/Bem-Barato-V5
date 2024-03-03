@@ -191,6 +191,9 @@ body {
   border: 3px #1565c0 solid;
   background-color: #fff;
   border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 90%;
   height: 350px;
   margin: auto;
@@ -232,6 +235,11 @@ body {
   margin-top: 10px;
   font-size: 30px;
   cursor: pointer;
+}
+
+.Logo{
+  width: 300px;
+  height: 300px;
 }
 
 .btn:hover {

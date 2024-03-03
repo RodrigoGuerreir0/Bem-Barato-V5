@@ -33,13 +33,13 @@ $dados = ConsultarCaixa();
     </tr>
 <?php } ?>
 
-<?php // foreach ($codVenda as $linha2) { ?>
+
     <tr>
         <p class="txtinfoscaixa"><?php $codVenda ?></p>
         <?php $ultimoCodVenda = $codVenda ?>
         <input id="UltimoCodVenda" type="hidden" value="<?php echo $ultimoCodVenda ?>">
     </tr>
-<?php //} ?>
+
 
 <body>
     <main class="main">
@@ -67,7 +67,7 @@ $dados = ConsultarCaixa();
                         <div class="divisoriacaixa1">
                            
                                 <fieldset class="Logo-Produtos">
-                                    <legend class="legend"><b></b></legend>
+                                    <img class="Logo" src="./img/logo.png" alt="">
                                 </fieldset>
                                 <fieldset class="CodBarra">
                                     <legend class="legend"><b>Valor Desconto </b></legend>
@@ -216,7 +216,7 @@ $dados = ConsultarCaixa();
                 ValorVenda: $("#ValorVenda").val()
             },
             success: function(response) {
-                alert(response)
+                
             },
             error: function(xhr, status, error) {
                 alert('Erro ao finalizar compra: ' + error);
